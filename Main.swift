@@ -116,8 +116,8 @@ var stackObject = MyStack<Int>() //use <> to define type!
 
 //push to list		
 stackObject.push(value: inputNumber!)
-print("Pushed \(stackObject.at(index: 0))")
-print("Pushed \(stackObject.at(index: 0))")
+stackObject.push(value: inputNumber!)
+stackObject.push(value: inputNumber!)
 print("Pushed \(stackObject.at(index: 0))")
 print("List: \(stackObject.str())")
 
@@ -129,11 +129,8 @@ print("List: \(stackObject.str())")
 print("Peek \(try stackObject.peek())")
 
 //clear list
-
 print("Cleared list \(stackObject.clear())")
 
 //pop error
-
 print("Pop error \(try stackObject.pop())")
-
 
